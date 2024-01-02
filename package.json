@@ -1,0 +1,17 @@
+{
+  "name": "@sunday00/nest-starter-logger",
+  "version": "0.0.1",
+  "description": "nestjs winston logger starter configs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "prettier": "^3.1.1"
+  },
+  "dependencies": {
+  }
+}
