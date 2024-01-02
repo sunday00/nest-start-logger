@@ -1,20 +1,28 @@
 {
   "name": "@sunday00/nest-starter-logger",
-  "version": "0.0.1",
+  "version": "0.0.8",
   "publishConfig": {
     "access": "public"
   },
   "description": "nestjs winston logger starter configs",
+  "main": "dist/index",
+  "types": "dist/index",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist && tsc",
+    "prepublish": "npm run build"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^5.3.3",
-    "prettier": "^3.1.1"
+    "@types/node": "^20.10.6",
+    "prettier": "^3.1.1",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3"
   },
   "dependencies": {
+    "@nestjs/common": "^10.3.0",
+    "rxjs": "^7.8.1"
   }
 }
