@@ -1,4 +1,4 @@
-export class Consoler {
+export default class Consoler {
   invoke() {
     const s: string = 'start!'
 
@@ -8,3 +8,4 @@ export class Consoler {
 
 const c = new Consoler()
 c.invoke()
+//
