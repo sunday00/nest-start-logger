@@ -1,6 +1,6 @@
 # nest-start-logger
 
-# like this in package json
+# like this in package json - usage
 ```json
 {
   "dependencies": {
