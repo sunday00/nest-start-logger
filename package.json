@@ -7,6 +7,21 @@
   "description": "nestjs winston logger starter configs",
   "main": "dist/index",
   "types": "dist/index",
+  "exports": {
+    "./consoler": {
+      "types": "./dist/consoler/index.d.ts",
+      "import": "./dist/consoler/index.js",
+      "require": "./dist/consoler/index.js"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "consoler": [
+        "./dist/consoler/index.d.ts",
+        "./dist/consoler/*"
+      ]
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rimraf dist && tsc",
