@@ -8,6 +8,11 @@
   "main": "dist/index",
   "types": "dist/index",
   "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
     "./consoler": {
       "types": "./dist/consoler/index.d.ts",
       "import": "./dist/consoler/index.js",
@@ -38,6 +43,8 @@
   },
   "dependencies": {
     "@nestjs/common": "^10.3.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1",
     "rxjs": "^7.8.1"
   }
 }
